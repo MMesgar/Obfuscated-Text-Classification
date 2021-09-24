@@ -166,13 +166,14 @@ The numbers in paratheses show the standard deviation of the accuracy scores in 
  | Majority | 16.58 (0.26) |0.13 |
  | LogReg| 75.82 (0.60) | 106.7 |
  | MLP|  32.54 (0.29) | 1,807.76 | 
- | CNN | 80.97 (0.43) |  1,2218.04 |
- | BiLSTM|  78.87 | 5925.36 |  
+ | BiLSTM|  79.37 (0.53) | 21,333.11 |
+ | CNN | 80.97 (0.43) |  1,2218.04 | 
   
 # Conclusions and Future work 🛫
 
 In this project, the CNN model could learn to extract features from character embeddings of a sentence. 
 Using these features, our model achieves the highest performance compared with the examined models. 
+The CNN model is much faster than the BiLSTM model to converge. 
 In the future, one might try out attention layers  on top of BiLSTM layers. 
 Attentions have been shown to significantly help in learning long-distance relations between BiLSTM states. 
 Although the results of BERT in my early experiments is low, Transformers with their multihead attentions (without any pretraining)
@@ -183,6 +184,8 @@ This method has been improved the performance on neural machine translaion model
 So it might be useful for this task as well. 
 For more details about the models used in this project and also possible future work, 
 please refer to the [DL for NLP 2021](https://github.com/dl4nlp-tuda2021/deep-learning-for-nlp-lectures) course that I gave at the computer science department of the Technical University of Darmstadt. 
+
+ 
 
  
 
